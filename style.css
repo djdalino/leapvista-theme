@@ -639,39 +639,6 @@ nav {
   text-align: center;
 }
 
-/* End of Section Two */
-
-/* Section Three */
-
-.section__three__wrapper {
-  padding-top: 8rem;
-  padding-bottom: 2.5rem;
-  position: relative;
-}
-.section__three__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.section__three__container .section__three__column-one,
-.section__three__container .section__three__column-two {
-  width: 50%;
-}
-.section__three__container .section__three__column-one {
-  padding-left: 17.5%;
-}
-.section__three__column-two {
-  padding: 30px 100px;
-}
-.section__three__column-two ul {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.section__three__column-two ul li {
-  list-style-type: none;
-}
 .ml__wrapper {
   display: none;
 }
@@ -753,6 +720,75 @@ nav {
     margin-top: 26px;
     text-align: center;
   }
+}
+
+/* End of Section Two */
+
+/* Section Three */
+
+.section__three__wrapper {
+  padding-top: 8rem;
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+.section__three__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__three__container .section__three__column-one,
+.section__three__container .section__three__column-two {
+  position: relative;
+  width: 50%;
+}
+
+.section__three__container .section__three__column-one {
+  padding-left: 17.5%;
+}
+.section__three__column-one .steve-image {
+  position: relative;
+}
+.section__three__column-one .dots {
+  position: absolute;
+  bottom: 35%;
+  left: -20px;
+}
+
+.section__three__column-two {
+  padding: 30px 100px;
+}
+.section__three__column-two ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 309px;
+  margin-bottom: 45px;
+}
+.section__three__column-two ul li {
+  list-style-type: none;
+  margin: 12px 0;
+}
+
+.section__three__column-two ul li img {
+  width: auto;
+  max-width: 100%;
+}
+
+.section__three__column-two p {
+  color: #223e7b;
+  font-weight: bold;
+  font-size: 21.328px;
+  margin-bottom: 45px;
+}
+
+.section__three__column-two a {
+  background: #f26522;
+  border-radius: 6px;
+  padding: 16px 24px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 /* End of Section Three*/
