@@ -1283,4 +1283,21 @@ nav {
 }
 /* End of Section Seven */
 
+/* Section Eight Trust Pilot */
+
+.section__eight__wrapper {
+  width: 100%;
+  position: relative;
+  padding: 8.3rem 13.9% 3.5rem 17.9%;
+  display: flex;
+  justify-content: center;
+}
+
+.section__eight__container {
+  max-width: 928px;
+  width: 100%;
+}
+
+/* End of Section Eight Trust Pilot */
+
 /* end of main */
