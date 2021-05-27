@@ -1229,6 +1229,9 @@ nav {
   .mv__s5__b3__slide {
     width: 100vw;
   }
+  .mv__s5__b3__slide img {
+    margin: auto;
+  }
   .mv__section__five__boxFour {
     margin-top: 24px;
     width: 100vw;
@@ -1267,6 +1270,10 @@ nav {
     color: #ffffff;
     margin-top: 100px;
     text-align: center;
+  }
+  .mv__s5__b4__stars {
+    display: flex;
+    justify-content: center;
   }
   .mv__view__all__reviews a {
     background: #f26522;
@@ -1362,7 +1369,7 @@ nav {
   right: 0rem;
 }
 .section__six__columnOne .s6__buttonTwo {
-  display:none;
+  display: none;
 }
 @media screen and (max-width: 768px) {
   .section__six__wrapper {
@@ -1382,7 +1389,7 @@ nav {
   .section__six__columnOne .s6__buttonTwo {
     width: 127px;
     font-size: 14px;
-    display:block;
+    display: block;
   }
   .section__six__columnTwo {
     padding: 0;

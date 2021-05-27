@@ -90,4 +90,37 @@ $(function() {
     $(".ml__image__slide").css({ transform: `translate(${ml_trans}%)` });
     $(".ml__text__slide").css({ transform: `translate(${ml_trans}%)` });
   });
+
+  $(".mv__section__five__boxOne").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: true,
+    arrows: false,
+    asNavFor: ".mv__slider"
+  });
+
+  $(".mv__s5__b2__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    asNavFor: ".mv__slider",
+    arrows: false
+  });
+
+  $(".mv__s5__b3__slider").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    asNavFor: ".mv__section__five__boxOne",
+    arrows: false
+  });
+
+  $(".mv__section__five__boxFour").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: false,
+    asNavFor: ".mv__section__five__boxOne",
+    arrows: false
+  });
 });
