@@ -124,8 +124,9 @@ $(function() {
     arrows: false
   });
 
+  // Testimonial Slider
   $(".s4__slider__box").slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
     dots: false,
@@ -138,7 +139,7 @@ $(function() {
   });
 
   $(".section__third__box").slick({
-    slidesToShow: 3,
+    slidesToShow: 1,
     slidesToScroll: 1,
     dots: false,
     centerMode: true,
@@ -147,4 +148,20 @@ $(function() {
     infinite: true,
     asNavFor: ".s4__slider__box"
   });
+
+  let lenghtOfTextBox = document.querySelectorAll("#mv__testimony");
+  let mv__testimony__count = 1;
+
+  $(".s4__slick-next").click(() => {
+    if (mv__testimony__count >= lenghtOfTextBox.length) {
+      mv__testimony__count = 0;
+    }
+    mv__testimony__count = mv__testimony__count + 1;
+    $(".mv__first__num").text(mv__testimony__count);
+  });
+  $(".mv__last__num").text(lenghtOfTextBox.length);
+  $(".mv__first__num").text(mv__testimony__count);
+  // $(".mv__first__num").text(mv__testimony__count + 1);
+
+  //End of Testimonial Slider
 });
