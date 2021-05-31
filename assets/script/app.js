@@ -123,4 +123,28 @@ $(function() {
     asNavFor: ".mv__section__five__boxOne",
     arrows: false
   });
+
+  $(".s4__slider__box").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: false,
+    centerMode: true,
+    arrows: true,
+    variableWidth: true,
+    nextArrow: $(".s4__slick-next"),
+    prevArrow: $(".s4__slick-prev"),
+    asNavFor: ".section__third__box"
+  });
+
+  $(".section__third__box").slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: false,
+    centerMode: true,
+    arrows: false,
+    variableWidth: true,
+    infinite: true,
+    asNavFor: ".s4__slider__box"
+  });
 });
