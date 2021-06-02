@@ -677,7 +677,8 @@ nav {
     display: flex;
     width: 100vw;
     overflow-x: hidden;
-    height: 100vh;
+    height: 100%;
+    padding-bottom: 30px;
   }
   .ml__text__slide {
     position: relative;
@@ -1459,6 +1460,7 @@ nav {
 
 .section__seven__container {
   max-width: 928px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
@@ -1565,6 +1567,109 @@ nav {
   border-radius: 6px;
   color: #ffffff;
 }
+
+.section__seven__mobile__version {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .our__program img:nth-child(1) {
+    display: none;
+  }
+  .our__program {
+    bottom: -2.5rem !important;
+    left: 0;
+  }
+  .polygon__11 {
+    display: none;
+  }
+
+  .section__seven__wrapper:before {
+    height: 607px;
+    max-width: 180px;
+    left: 0;
+  }
+  .section__seven__wrapper {
+    padding: 8.3rem 20px 3.5rem 20px;
+  }
+  .section__seven__columnOne,
+  .section__seven__columnTwo {
+    display: none;
+  }
+  .section__seven__mobile__version {
+    display: block;
+    width: 100%;
+  }
+  .s7__mv__wrapper {
+    width: 100%;
+  }
+  .s7__worldclass {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 35px;
+    letter-spacing: 0.15em;
+    color: #828282;
+    margin-bottom: 0;
+  }
+  .s7__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 120%;
+    color: #223e7b;
+    margin-bottom: 20px;
+  }
+  .s7__mv__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    justify-items: center;
+  }
+  .s7__mv__box {
+    background: url("./assets/images/section/section 7/Mask Group MV.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 30px 24px;
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #76d1f7;
+  }
+
+  .s7__mv__box h4 {
+    font-style: normal;
+    font-weight: bold;
+    -webkit-text-stroke: 1px #223e7b;
+    color: transparent;
+    font-size: 44.203px;
+    line-height: 120%;
+  }
+  .s7__mv__box h5 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18.662px;
+    line-height: 120%;
+    color: #223e7b;
+  }
+  .s7__mv__box p {
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 170%;
+    color: #4f4f4f;
+    margin-bottom: 30px;
+  }
+  .s7__mv__box a {
+    padding: 16px 24px;
+    background: #f26522;
+    border-radius: 6px;
+    color: #ffffff !important;
+  }
+}
 /* End of Section Seven */
 
 /* Section Eight Trust Pilot */
@@ -1580,6 +1685,16 @@ nav {
 .section__eight__container {
   max-width: 928px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .section__eight__wrapper {
+    width: 100%;
+    position: relative;
+    padding: 8.3rem 24px 140px 24px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 /* End of Section Eight Trust Pilot */
