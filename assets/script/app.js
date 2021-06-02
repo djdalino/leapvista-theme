@@ -164,4 +164,38 @@ $(function() {
   // $(".mv__first__num").text(mv__testimony__count + 1);
 
   //End of Testimonial Slider
+
+  // Filter
+  $(".lv-btn").click(function() {
+    $(".active").removeClass("active");
+    $(this).addClass("active");
+    $(this)
+      .children()
+      .addClass("active");
+    const value = $(this).attr("data-filter");
+
+    if (value !== "all") {
+      $(".section__seven__columnTwo__box")
+        .not("." + value)
+        .removeClass("show");
+      $(".section__seven__columnTwo__box")
+        .not("." + value)
+        .addClass("hide");
+      $(".section__seven__columnTwo__box")
+        .filter("." + value)
+        .removeClass("hide");
+      $(".section__seven__columnTwo__box")
+        .filter("." + value)
+        .addClass("show");
+    }
+  });
+
+  $(".lv-span").click(function() {
+    $(".active").removeClass("active");
+    $(this).addClass("active");
+    $(this)
+      .parent()
+      .addClass("active");
+  });
+  // End of Filter
 });

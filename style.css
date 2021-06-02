@@ -1473,23 +1473,31 @@ nav {
   font-weight: 500;
   font-size: 16px;
   color: #223e7b;
+  cursor: pointer;
+}
+
+.lv-btn.active {
+  color: #f26522;
+}
+.lv-span.active {
+  -webkit-text-stroke: 1px #f26522;
 }
 .section__seven__columnOne ul li:hover {
   color: #f26522;
 }
-.section__seven__columnOne ul li span {
+.lv-span {
   -webkit-text-stroke: 1px #223e7b;
   color: transparent;
   font-size: 3rem;
   margin-right: 24px;
   width: 72px;
 }
-.section__seven__columnOne ul li span:hover {
+.lv-span:hover {
   -webkit-text-stroke: 1px #f26522;
 }
 
 .section__seven__columnTwo {
-  background: url("../images/section/section 7/Mask Group.png");
+  background: url("./assets/images/section/section 7/Mask Group.png");
   width: 448px;
   height: 415px;
   padding: 48px 64px;
@@ -1501,6 +1509,12 @@ nav {
   position: absolute;
   top: 13px;
   right: 150px;
+}
+.section__seven__columnTwo__box.show {
+  display: block;
+}
+.section__seven__columnTwo__box.hide {
+  display: none;
 }
 .section__seven__columnTwo .section__seven__columnTwo__box h4 {
   font-style: normal;
