@@ -1474,10 +1474,29 @@ nav {
   font-size: 16px;
   color: #223e7b;
   cursor: pointer;
+  position: relative;
+}
+
+.lv-btn:hover::before {
+  content: "";
+  width: 400px;
+  height: 3px;
+  position: absolute;
+  left: -100%;
+  background-color: #76d1f7;
 }
 
 .lv-btn.active {
   color: #f26522;
+}
+
+.lv-btn.active::before {
+  content: "";
+  width: 400px;
+  height: 3px;
+  position: absolute;
+  left: -100%;
+  background-color: #76d1f7;
 }
 .lv-span.active {
   -webkit-text-stroke: 1px #f26522;
@@ -1765,7 +1784,7 @@ nav {
   padding: 0 13.9% 0 17.9%;
   display: flex;
   justify-content: center;
-  background-image: url("../images/section/section 10/Group 45.png");
+  background-image: url("./assets/images/section/section 10/Group 45.png");
   height: 274px;
   background-repeat: no-repeat;
   background-size: 100%;
