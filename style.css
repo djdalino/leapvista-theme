@@ -1914,6 +1914,35 @@ nav {
   line-height: 120%;
   color: #223e7b;
 }
+@media screen and (max-width: 768px) {
+  .s9__9dotsThree {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .section__nine__wrapper {
+    width: 100%;
+    position: relative;
+    padding: 8.3rem 24px 3.5rem 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .section__nine__container .section__nine__secondBox {
+    flex-direction: column;
+  }
+  .section__nine__container .section__nine__firstBox .s9__boxTwo {
+    display: none;
+  }
+  .s9__boxThree__featuredImg img {
+    width: 100%;
+  }
+  .section__nine__container
+    .section__nine__secondBox
+    .s9__boxFour
+    .s9__boxFour__blogPost {
+    display: none;
+  }
+}
 /* ENd of Section Nine */
 
 /* Section Ten */
