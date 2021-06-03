@@ -1169,8 +1169,12 @@ nav {
     display: flex;
     flex-direction: column;
     background-color: #f4fbfe;
-    padding: 24px 0;
+    padding: 32px 0;
     position: relative;
+  }
+  .mv__s5__whatpeoplesay {
+    position: absolute;
+    bottom: -3.5rem;
   }
   .mv__container .mv__what__people__say {
     position: absolute;
@@ -1278,7 +1282,7 @@ nav {
     display: block;
     width: 100%;
     color: #ffffff;
-    margin-top: 100px;
+    margin-top: 70px;
     text-align: center;
   }
   .mv__s5__b4__stars {
@@ -1571,7 +1575,9 @@ nav {
 .section__seven__mobile__version {
   display: none;
 }
-
+.our__program img:nth-child(2) {
+  display: none;
+}
 @media screen and (max-width: 1024px) {
   .our__program img:nth-child(1) {
     display: none;
@@ -1579,6 +1585,9 @@ nav {
   .our__program {
     bottom: -2.5rem !important;
     left: 0;
+  }
+  .our__program img:nth-child(2) {
+    display: block;
   }
   .polygon__11 {
     display: none;
@@ -1685,6 +1694,15 @@ nav {
 .section__eight__container {
   max-width: 928px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.s8__desktop__version {
+  width: 100%;
+}
+.s8__mobile__version {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -1694,6 +1712,13 @@ nav {
     padding: 8.3rem 24px 140px 24px;
     display: flex;
     justify-content: center;
+  }
+  .s8__desktop__version {
+    width: 100%;
+    display: none;
+  }
+  .s8__mobile__version {
+    display: block;
   }
 }
 
